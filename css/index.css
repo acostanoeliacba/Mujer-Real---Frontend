@@ -19,17 +19,18 @@ h3{
     color: #70160E;
     text-align: left;
     padding-left: 5%;
-    font-size:xx-large;
+    font-size:26px;
 }
 
 .icono-opinion {
     width: 5%;
+    
 }
 
 .opinion {
     text-align: left;
     padding-left: 5%;
-    font-size:xx-large;
+    font-size:24px;
 }
 
 .navbar {
@@ -48,14 +49,12 @@ h3{
     color: #AB793E;
     padding: 20px 20px 20px 20px;
     text-decoration: none;
-    text-align: center;
     display: flex;
     gap: 20px;
 }
 
 .navbar-links a {
     color: #AB793E;
-    text-align: center;
     padding: 14px 20px;
     text-decoration: none;
 }
@@ -76,12 +75,6 @@ h3{
 img {
     max-width: 100%;
     height: auto;
-}
-
-.side {
-    flex: 30%;
-    background-color: #e9e1e1;
-    padding: 10px;
 }
 
 .main {
@@ -105,7 +98,7 @@ img {
     padding: 10px;
     width: 200%;
 
-    animation: cambio 20s infinite alternate linear;
+    animation: cambio 10s infinite alternate linear;
 }
 
 .slider li {
@@ -115,30 +108,29 @@ img {
 
 .slider img {
     width: 100%;
+    height: auto;
 }
 
 @keyframes cambio {
+    
     0% {
         margin-left: 0;
     }
-
-    22% {
+    25% {
+        margin-left: -50%;
+    }
+    50% {
         margin-left: -100%;
     }
-
-    44% {
-        margin-left: -200%;
+  
+    100% {
+        margin-left: 0;
     }
-    
-    66% {
-        margin-left: -300%;
-    }
-
-}
+}   
 
 .terceraimagen {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .footer {
@@ -205,25 +197,42 @@ padding-bottom: 50px;
 @media (max-width: 768px) {
     .navbar-logo img {
         height: 40px;
+      }
+  
+      .navbar {
+        flex-direction: row;
+        justify-content: center;
+      }
+  
+      .navbar-links {
+        display: flex;
+        gap: 20px;
+      }
+  
+      .navbar-links a {
+        padding: 14px 20px;
+      }
     }
-}
 
 @media (max-width: 480px) {
     .navbar-logo img {
         height: 30px;
-    }
-
-    .navbar {
+      }
+  
+      .navbar {
         padding: 10px;
-    }
-
-    .navbar-links {
-        display: none;
+      }
+  
+      .navbar-links {
+        display: flex;
         flex-direction: column;
         gap: 10px;
-    }
-
-    .navbar-links a {
+        margin-top: 10px;
+      }
+  
+      .navbar-links a {
         padding: 10px 20px;
+        width: 100%;
+        text-align: center;
+      }
     }
-}

@@ -56,8 +56,8 @@ body {
 }
 
 .galleria-items {
-    flex: 1 1 calc(33.333% - 40px);
-    max-width: calc(33.333% - 40px);
+    width: 300px;
+    margin-bottom: 20px;
     text-align: center;
     box-sizing: border-box;
 }
@@ -78,8 +78,7 @@ body {
 
 @media (max-width: 768px) {
     .gallery-item {
-        flex: 1 1 calc(50% - 40px);
-        max-width: calc(50% - 40px);
+        width: 100%;
     }
 }
 
