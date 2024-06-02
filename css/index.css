@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto';
     margin:0;
     padding:0;
     background-color: #161917;
@@ -98,7 +98,7 @@ img {
     padding: 10px;
     width: 200%;
 
-    animation: cambio 10s infinite alternate linear;
+    animation: cambio 40s infinite alternate linear;
 }
 
 .slider li {
